@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/892f1ce202.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/du-style.css" />
+
+    <title>Scale Box</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <!-- SIDE BAR -->
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div
+            class="
+              d-flex
+              flex-column
+              align-items-center align-items-sm-start
+              px-3
+              pt-2
+              text-white
+              min-vh-100
+            "
+          >
+            <a
+              href="du-welcome.html"
+              class="
+                d-flex
+                align-items-center
+                pb-3
+                mb-md-0
+                me-md-auto
+                text-white text-decoration-none
+              "
+            >
+              <span class="fs-3 d-none d-sm-inline">SCALE BOX</span>
+            </a>
+            <ul
+              class="
+                nav nav-pills
+                flex-column
+                mb-sm-auto mb-0
+                align-items-center align-items-sm-start
+              "
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="du-welcome.html" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="du-cek_kesehatan.html"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-table"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Cek Kesehatan</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="du-kekuatan_umkm.html"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-bootstrap"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Kekuatan UMKM</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END SIDEBAR -->
+
+        <!-- CONTENT -->
+        <div class="col du-content">
+          <!-- NAVBAR -->
+          <nav class="navbar navbar-dark bg-secondary">
+            <div class="container-fluid">
+              <span class="text-white">Nama UMKM</span>
+              <!-- USER ICON -->
+              <div class="dropdown user-icon">
+                <a
+                  href="#"
+                  class="
+                    d-flex
+                    align-items-center
+                    text-white text-decoration-none
+                    dropdown-toggle
+                  "
+                  id="dropdownUser1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://github.com/mdo.png"
+                    alt="hugenerd"
+                    width="30"
+                    height="30"
+                    class="rounded-circle"
+                  />
+                  <span class="d-none d-sm-inline mx-1">Username</span>
+                </a>
+                <ul
+                  class="
+                    dropdown-menu
+                    user-drop
+                    dropdown-menu-dark
+                    text-small
+                    shadow
+                  "
+                >
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- END USER ICON -->
+            </div>
+          </nav>
+          <!-- END NAVBAR -->
+
+          <div class="py-3 form-content">
+            <!-- BREADCRUMB -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb ms-3">
+                <li class="breadcrumb-item">
+                  <a href="du-welcome.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Cek Kesehatan UMKM
+                </li>
+              </ol>
+            </nav>
+            <!-- END BREADCRUMB -->
+            <h1 class="ms-3 fs-2">Cek Kesehatan UMKM Anda</h1>
+
+            <!-- FORM CEK KESEHATAN -->
+            <div>
+              <!-- MANAGEMEN -->
+              <ul class="list-unstyled ms-3 mt-4">
+                <h5>1. Manajemen</h5>
+                <li class="ms-4">
+                  <span>a. Apakah mengerti mengenai aset?</span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>b. Apakah mengerti mengenai omset? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>c. Apakah mengerti mengenai margin? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>d. Apakah mengerti mengenai hpp? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>e. Apakah ada pembukuan? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>f. Apakah ada struktur manajemen? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>a. Apakah mengerti mengenai aset?</span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <!-- END MANAGEMEN -->
+
+              <!-- PEMASARAN -->
+              <ul class="list-unstyled ms-3 mt-4">
+                <h5>2. Pemasaran</h5>
+                <li class="ms-4">
+                  <span>a. Apakah ada target pasar? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span
+                    >b. Apakah ada dana alokasi khusus untuk pemasaran?</span
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>c. Apakah ada aktifitas pemasaran?</span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>d. Menggunakan media apa saja?</span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sosial Media
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Koran
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      TV
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Website
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Flyer, Poster, Baliho
+                    </label>
+                  </div>
+                </li>
+                <li class="ms-4">
+                  <span>e. Adakah efek dari pemasaran? </span>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Ya
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tidak
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <!-- END PEMASARAN -->
+              <button class="btn btn-primary ms-4">
+                <a href="du-kekuatan_umkm.html"></a> Kirim Jawaban
+              </button>
+            </div>
+          </div>
+          <!-- END FORM CEK KESEHATAN -->
+        </div>
+        <!-- END CONTENT -->
+      </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="assets/js/du-script.js"></script>
+  </body>
+</html>
